@@ -8,7 +8,7 @@ class Display extends Component {
         return(
             <div className="calcDisplay">
                 <div className="calcDisplayHistory">{this.props.history}</div>
-                {this.props.display ? <div className="calcDisplayCurrent">{this.props.display}</div> : <div className="calcDisplayCurrent">0</div>}
+                {this.props.display ? <div id="display" className="calcDisplayCurrent">{this.props.display}</div> : <div id="display" className="calcDisplayCurrent">0</div>}
             </div>
         )
     }
